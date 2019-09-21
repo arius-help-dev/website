@@ -2,7 +2,7 @@
 <h3>
   Sobre a Arius-help 
   <img src="https://cdn3.iconfinder.com/data/icons/flags-of-countries-3/128/Brazil-512.png" width="20px"/>
-<h3>
+</h3>
 <p>
   Arius-Help é uma startup criada para ajudar diversas empresas
   nos ambitos de seu marketing digital, desenvolvimento de programas, 
@@ -24,7 +24,7 @@
 <h3>
   About Arius-help
   <img src="https://icon-library.net/images/united-states-flag-icon/united-states-flag-icon-20.jpg" width="20px"/>
-<h3>
+</h3>
 <p>
   Arius-Help is a startup created for help various businesses
   with your digital marketing, development of programs, app's
