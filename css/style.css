@@ -1,1 +1,92 @@
 @charset 'utf-8';
+
+/* MAIN  COLOR */
+.bg-purple-gradient {
+  background: linear-gradient(to bottom left, rgb(130, 40, 221), rgb(146, 85, 228));
+  height: 100vh;
+}
+
+/* NAVBAR */
+.navbar-arius {
+  background: rgba(0,0,0,.4);
+  height: 74px;
+  transition: 0.4s;
+}
+
+.navbar-arius-active {
+  background: rgba(0,0,0,.5);
+  height: 100vh;
+  transition: 0.4s;
+}
+
+.navbar-arius a {
+  color: white;
+}
+
+a.navbar-link {
+  margin-top: 2px; /* for compense ::aftor of h:2px */
+}
+
+a.navbar-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  background: white;
+  transition: 0.3s;
+}
+
+a.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-icon-size {
+  font-size: 1.2rem;
+}
+
+.btn-arius-transparent {
+  background: rgba(255,255,255,0);
+  border-color: rgb(255,255,255);
+  color: white;
+}
+
+.btn-arius-transparent:hover {
+  background: rgba(255,255,255,1);
+  color: rgba(146, 85, 228);
+}
+
+@media screen and (max-width: 1200px) {
+  nav.navbar .container {
+    margin-top: -10px;
+  }
+
+  /* for social-network icons display inline */
+  .navbar-nav.social {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  ul.navbar-nav.social li.nav-item {
+    padding: 10px;
+  }
+
+  ul.navbar-nav.social li.nav-item a.nav-link {
+    font-size: 1.5rem;
+  } 
+
+  .navbar-icon-size {
+    font-size: 1.3rem;
+  }
+  
+  /* for font size of links in navbar */
+  a.navbar-link {
+    margin-top: 2px; /* for compense ::aftor of h:2px */
+    font-size: 1.08rem;
+  }
+}
+
+.animate-toggle {
+  transition: 1.2s;
+}

@@ -5,16 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome-all.css">
     <link rel="stylesheet" href="./css/animate.css">
     <title>Arius-Help</title>
   </head>
   <body>
-    <div class="jumbotron bg-dark text-white">
-      <div class="wow bounceInUp">
-        <h1 class="display-4">Olá, Arius-help!</h1>
-        <p class="lead">Este é apenas um teste com o bootstrap4, apague isto, antes de começar a codar!</p>
-        <hr class="my-4 bg-white">
+
+    <nav class="navbar navbar-expand-lg navbar-arius fixed-top" id="navbar">
+      <div class="container">
+
+        <span class="navbar-brand" href="#"><img src="./images/Logo-Horizontal.png" height="66px"/></span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false">
+          <i class="fas fa-sort-amount-down text-white animate-toggler"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mr-auto ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link navbar-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">SERVIÇOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">SERVIÇOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">PORTÓLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">DEPOIMENTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">SOBRE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#">CONTATO</a>
+            </li>
+          </ul>
+
+        <ul class="navbar-nav social">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram navbar-icon-size"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-f navbar-icon-size"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-youtube navbar-icon-size"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter navbar-icon-size"></i></i></a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <button class="btn btn-arius-transparent">
+            <i class="fas fa-phone-alt"></i> (83) 99988-7766
+          </button>
+        </ul>
+        
       </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-purple-gradient vh-100">
     </div>
     
     <!-- scripts -->
@@ -22,6 +78,8 @@
     <script src="./javascript/popper.js"></script>
     <script src="./javascript/bootstrap.js"></script>
     <script src="./javascript/wow.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/font-awesome-all.js"></script>
     <script>new WOW().init()</script>
   </body>
 </html>
