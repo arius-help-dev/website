@@ -90,3 +90,14 @@ a.navbar-link:hover::after {
 .animate-toggle {
   transition: 1.2s;
 }
+
+.portfolio .nav-link{
+	color:black;
+	height:60px;
+	vertical-align:middle;
+}
+
+.portfolio .col-6{
+	padding-right:0;
+	padding-left:0;
+}
