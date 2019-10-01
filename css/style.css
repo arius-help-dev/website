@@ -412,7 +412,6 @@ a.navbar-link:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
 }
 
 .contact svg {
@@ -434,4 +433,50 @@ a.navbar-link:hover::after {
 
 .contact i {
   color: white;
+}
+
+.main-form {
+
+}
+
+.main-form label {
+  color: white;
+}
+
+.main-form input {
+  background-color: rgba(0,0,0,0);
+  font-style: italic;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: solid 1.4px white;
+  border-radius: 0%;
+}
+
+.main-form textarea {
+  background-color: rgba(0,0,0,0);
+  font-style: italic;
+  padding-top: 15px;
+  border: solid 1.4px white;
+  border-radius: 0%;
+}
+
+.main-form button {
+  background-color: rgb(130,46,255);
+  border: none;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.main-form button:hover {
+  background-color: rgb(155, 88, 255);
+}
+
+.main-form p {
+  padding-bottom: 20px;
+  margin-bottom: 0%;
 }
