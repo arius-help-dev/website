@@ -194,6 +194,7 @@ a.navbar-link:hover::after {
 .pre-services {
   height: 200px;
 }
+
 .pre-services svg {
   padding-top: 25px;
   padding-left: 10px;
@@ -297,4 +298,140 @@ a.navbar-link:hover::after {
 .portfolio .col-6{
 	padding-right:0;
 	padding-left:0;
+}
+
+/* why choose Arius-Help */
+.bg-purple-gradient-two {
+  background: linear-gradient(to right, rgb(75, 12, 157), rgb(138, 65, 234));
+}
+
+.services {
+  height: 300px;
+}
+
+.services svg {
+  padding-top: 25px;
+  padding-left: 10px;
+  width: 80px;
+  fill: white;
+}
+
+.services h3 {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.services p {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 1.05rem;
+}
+
+/* our team */
+.our-team h4 {
+  font-size: 1.10rem;
+  color: rgb(80, 80, 80)
+}
+
+.our-team h6 {
+  font-size: 0.85rem;
+  color: rgb(139, 70, 230);
+}
+
+.profile-overlay {
+  background-color: rgba(146, 85, 228, 1);
+  position: relative;
+  height: 250px;
+  width: 190px;
+}
+
+.profile-overlay img {
+  opacity: .7;
+}
+
+.our-team .profile-overlay {
+  box-shadow: 12px 12px rgb(255, 255, 255),12px 12px 0px 2px rgb(137, 54, 249);
+}
+
+@media screen and (max-width: 768px){
+  .profile-overlay {
+    background-color: rgba(146, 85, 228, 1);
+    position: relative;
+    height: 250px;
+    width: 190px;
+    margin:auto;
+  }
+
+  .our-team h6 {
+    margin-bottom: 35px;
+  }  
+}
+
+/* testimonials */
+.bg-testimonials {
+  background-image: linear-gradient(rgba(84, 25, 160, 0.85), rgba(84, 25, 160, 0.9)), url('../images/background_testimonials.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+}
+
+.testimonial .testimonial-profile {
+  margin-top: 40px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial h4 {
+  font-size: 1.10rem;
+  color: rgb(255, 255, 255)
+}
+
+.testimonial h6 {
+  padding-top: 5px;
+  font-size: 0.85rem;
+  color: rgb(221, 221, 221);
+}
+
+.testimonial p {
+  font-size: 1.25rem;
+  color: rgb(221, 221, 221);
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .5px;
+}
+
+/* contact */
+.bg-contact {
+  background-image: url('../images/background_contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.contact svg {
+  fill: white;
+}
+
+.contact h2 {
+  padding-top: 10px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1.2px;
+}
+
+.contact p {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.contact i {
+  color: white;
 }
