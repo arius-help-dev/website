@@ -37,3 +37,21 @@ $(".carousel-services-for-mobile").owlCarousel({
     },
   }
 });
+
+$(".carousel-profiles-for-mobile").owlCarousel({
+  loop: true,
+  autoHeight: true,
+  nav: false,
+  margin: 40,
+  responsive: {
+    0: {
+      items: 1
+    },
+    500: {
+      items: 2
+    },
+    758: {
+      items: 3.1
+    },
+  }
+});
