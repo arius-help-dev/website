@@ -250,12 +250,49 @@ a.navbar-link:hover::after {
 .card {
   border: none;
   border-radius: 25px;
+  width: 350px;
+  height: 395px;
+  background-color: transparent;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.card-back {
+  background-color: rgb(137, 54, 249);
+  transform: rotateY(180deg);
+  border-radius: 25px;
+  color: white !important;
 }
 
 .card svg {
   height: 70px;
   width: 60px;
-  margin-left: 18px;
+  margin-left: 0px;
   margin-top: 8px;
   fill: white;
 }
@@ -286,6 +323,30 @@ a.navbar-link:hover::after {
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 24px;
+}
+
+@media screen and (max-width: 768px){
+  .card {
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .card-inner {
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+  }
+
+  .card p {
+    padding-top: 12px;
+    font-size: 0.9rem;
+    color: rgb(88, 88, 88);
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+  }
 }
 
 /* portfolio */
