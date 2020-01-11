@@ -7,6 +7,10 @@
 }
 
 /* NAVBAR */
+.nav-container {
+  margin: 0px 20px;
+}
+
 .navbar-arius {
   background: rgba(0,0,0,.4);
   height: 74px;
@@ -49,6 +53,7 @@ a.navbar-link:hover::after {
   background: rgba(255,255,255,0);
   border-color: rgb(255,255,255);
   color: white;
+  font-size: 0.9rem !important;
 }
 
 .btn-arius-transparent:hover {
