@@ -354,53 +354,6 @@ a.navbar-link:hover::after {
   }
 }
 
-/* portfolio */
-
-.portfolio-nav .nav-item a{
-  color: rgba(60,60,60,.9);
-}
-
-.nav-pills .nav-link {
-  border-radius: 0px;
-  border: 0.5px solid rgb(0,0,0,.1);
-}
-
-.portfolio-nav .nav-item .active{
-  background-color: rgb(137, 54, 249);
-  color: white;
-}
-
-.portfolio-nav .nav-item .nav-link{
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: .5px;
-}
-
-.nav-link .active {
-  color: white;
-}
-
-.portfolio-content-overlay{
-  background-color: rgb(131, 56, 230);
-  position: relative;
-}
-
-.portfolio-content-overlay:hover{
-  background-color: rgb(131, 56, 230);
-  position: relative;
-}
-
-.portfolio-content-overlay img {
-  opacity: .7;
-  transition: ease-in-out .5s;
-}
-
-.portfolio-content-overlay img:hover {
-  transition: ease-in-out .5s;
-  opacity: .5;
-  cursor: pointer;
-}
-
 /* why choose Arius-Help */
 .bg-purple-gradient-two {
   background: linear-gradient(to right, rgb(75, 12, 157), rgb(138, 65, 234));
