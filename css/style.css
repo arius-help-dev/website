@@ -8,17 +8,57 @@
 
 /* NAVBAR */
 .nav-container {
-  margin: 0px 20px;
+  margin : 0px 10px;
 }
 
 .navbar-arius {
-  background: rgba(0,0,0,.4);
-  height: 74px;
+  background: rgba(0,0,0,.3);
+  height: 68px;
   transition: 0.4s;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-container {
+    margin : 0px 0px;
+    margin-top: -12px;
+  }
+
+  .navbar-arius {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .navbar {
+    display: block;
+    align-items: unset;
+  }
+
+  /* for v-center link's on navbar toggle */
+  div#menu.navbar-collapse.collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  div#menu.navbar-collapse.collapsing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    transition: none;
+  }
 }
 
 .navbar-arius-active {
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.7);
   height: 100vh;
   transition: 0.4s;
 }
@@ -61,6 +101,18 @@ a.navbar-link:hover::after {
   color: rgba(146, 85, 228);
 }
 
+@media screen and (max-width: 992px) {
+  li.nav-item {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .btn-arius-transparent {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   nav.navbar .container {
     margin-top: -10px;
@@ -68,13 +120,8 @@ a.navbar-link:hover::after {
 
   /* for social-network icons display inline */
   .navbar-nav.social {
-    width: 100%;
     flex-direction: row;
     justify-content: center;
-  }
-  
-  ul.navbar-nav.social li.nav-item {
-    padding: 10px;
   }
 
   ul.navbar-nav.social li.nav-item a.nav-link {
@@ -88,7 +135,6 @@ a.navbar-link:hover::after {
   /* for font size of links in navbar */
   a.navbar-link {
     margin-top: 2px; /* for compense ::aftor of h:2px */
-    font-size: 1.08rem;
   }
 }
 
@@ -136,9 +182,8 @@ a.navbar-link:hover::after {
   transition: .5s;
 }
 
-.btn-more:hover {
+.btn-more:hover{
   text-decoration: none;
-  transform: scale(1.1);
   color: white;
 }
 
@@ -161,9 +206,13 @@ a.navbar-link:hover::after {
   .slider-dots li {
     height: 24px; 
     width: 24px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .4);
     border-radius: 50%;
     margin: 6px;
+  }
+
+  .slider-dots li:hover {
+    background-color: rgba(255, 255, 255, .6);
   }
 
   .slider-dots li.active {
